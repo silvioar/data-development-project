@@ -16,8 +16,8 @@ When I completed those steps, I finally could run it via PuTTy:
 Once these steps were completed I created a virtual environment, installed git and clone the actual github repository.
 After that, I checked the python version of the VM and then I installed the libraries required, with the requirements.txt file.
 
-Also I created a crontab file which contains the log of the python file execution. In this crontab file, I scheduled the running of the script and also it creates a txt file with the prints of the script. 
-In my case, my crontab contains
+Also I created a crontab file which contains the log of the python file execution. In this crontab file, I scheduled the running of the script and also it creates a txt file with the prints of the script:
+
 - 20 */1 * * * cd /home/ec2-user/project/project && /home/ec2-user/project/python_env/bin/python /home/ec2-user/project/project/project_github.py  >>/home/ec2-    user/project/project/cron_project.txt 2>&1
 
 It says that the script will run every hour at minute 20 and also it will create a txt file with the log (cron_project.txt)
