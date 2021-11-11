@@ -46,7 +46,7 @@ Here I'll show how the process works:
 1. Show how the cron file saves the executions and show the prints.
 2. The last update was at 00:20. Now we can see a new update at 13:20, so the data has changed.
 3. I'll refresh the Power BI Dashboard for update the data (At this part of the video, the dashboard contains data from 00:20)
-4. I update the Power BI with the 13:20 data.
+4. I update the Power BI with the 13:20 data. We can see how all the numbers changes.
 5. If I had a PRO license of Power BI, I could publish the dashboard and schedule the update from the Power BI workspace.
 
 
