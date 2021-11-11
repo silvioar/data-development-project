@@ -34,7 +34,7 @@ print_log('Creando Dataframe...')
 df = pd.DataFrame(output).T
 
 def get_engine():
-    return create_engine("mysql+pymysql://admin:MQsHepSDmT5pALMRM8T3@basemysql.pharmexxarg.com:3306/reportes")
+    return create_engine("mysql+pymysql://*****:*********@*********/**********")
 
 def escribir_base(df, tabla):
     df.reset_index().to_sql(tabla, index=False, con=get_engine(), if_exists='replace')
