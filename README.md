@@ -43,6 +43,11 @@ And here is a screenshot of the (simple) dashboard.
 ![image](https://user-images.githubusercontent.com/71708004/141308635-c58908b9-5c43-4cac-a875-d67e63da211a.png)
 
 
+Here I'll show how the process works:
+
+https://user-images.githubusercontent.com/71708004/141335223-4feaa891-0186-4814-8f0f-e7aa9b232d65.mp4
+
+
 
 
 
