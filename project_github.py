@@ -12,12 +12,17 @@ import threading
 import time
 import numpy as np
 from sqlalchemy import create_engine
-# import pymysql
 from datetime import datetime
 
 def print_log(text):
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
     print('%s | %s' % (timestamp, text))
+
+def get_engine():
+    return create_engine("mysql+pymysql://*****:*********@*********/**********")
+
+def escribir_base(df, tabla):
+    df.reset_index().to_sql(tabla, index=False, con=get_engine(), if_exists='replace')
 
 tickers = 'bitcoin,chainlink,ethereum,reserve-rights-token,cardano,polkadot,crypto-com-chain'
 url = f'https://api.coingecko.com/api/v3/simple/price?ids={tickers}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true'
@@ -31,14 +36,7 @@ print_log('Haciendo la request...')
 r = requests.get(url = url, verify = False)
 output = r.json()
 print_log('Creando Dataframe...')
-df = pd.DataFrame(output).T
-
-def get_engine():
-    return create_engine("mysql+pymysql://*****:*********@*********/**********")
-
-def escribir_base(df, tabla):
-    df.reset_index().to_sql(tabla, index=False, con=get_engine(), if_exists='replace')
-    
+df = pd.DataFrame(output).T   
 df = df.reset_index()
 df.columns = [['moneda','precio','market_cap','volumen']]
 
