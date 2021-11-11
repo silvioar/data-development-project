@@ -44,7 +44,6 @@ And here is a screenshot of the (simple) dashboard.
 
 
 
-https://user-images.githubusercontent.com/71708004/141309755-739f3d5d-5920-44ee-bbbb-e5a181f3ef1f.mp4
 
 
 
