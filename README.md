@@ -41,7 +41,7 @@ And here is a screenshot of the (simple) dashboard.
 ![image](https://user-images.githubusercontent.com/71708004/141308635-c58908b9-5c43-4cac-a875-d67e63da211a.png)
 
 
-Here I'll show how the process works:
+The next video will show how the process works:
 
 1. Show how the cron file saves the executions and show the prints.
 2. The last update was at 00:20. Now we can see a new update at 13:20, so the data has changed.
