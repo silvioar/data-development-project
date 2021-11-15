@@ -1,4 +1,4 @@
-# Crypto data in Power BI updated every hour
+# Crypto data in Power BI updated automatically every hour 
 
 The project has a python script which creates a table with some crypto data. This script is hosted in an EC2 AWS Instance that runs every hour at minute 20. The table created with the python script goes to a database (MySQL) automatically and then this SQL table goes to a Power BI dashboard. 
 So, the Power BI Dashboard updates every hour with some crypto data.
